@@ -1,0 +1,79 @@
+.single{
+    display: flex;
+    width: 100%;
+    .singleContainer{
+        flex: 6;
+        .top{
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            display: flex;
+            .left{
+                flex: 1;
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47); 
+                box-shadow: 0px 0px 10px 2px rgba(201,201,201,0.47);
+                padding: 20px;
+                position: relative;
+                border-radius: 5px;
+                width: 100%;
+                .editButton{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 5px;
+                    font-size: 12px;
+                    color: #7451f8;
+                    background-color: #7551f818;
+                    cursor: pointer;
+                    font-weight: bold;
+                    border-radius: 0px 0px 0px 5px;
+                }
+    
+                .item{
+                    display: flex;
+                    gap: 15px;
+                    img{
+                        width: 150px;
+                        height: 150px;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+                    .details{
+                        .itemTitle{
+                            margin-bottom: 10px;
+                            color: gray
+                        }
+                        .detailItem{
+                            margin-bottom: 10px;
+                            font-size: 14px;
+                            display: flex;
+                            .itemKey{
+                                font-weight: bold;
+                                margin-left: 10px;
+                            }
+                            .itemValue{
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .right{
+                flex: 2;
+            }
+
+            .bottom{
+                flex: 1;
+            }
+        }
+
+    }
+    .title{
+        font-size: 16px;
+        color: lightgrey;
+        margin-bottom: 20px;
+    }
+    .bottom{
+        padding: 20px;
+    }
+}
